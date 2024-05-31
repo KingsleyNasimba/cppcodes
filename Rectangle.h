@@ -1,19 +1,8 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#pragma once
 
-class Rectangle {
-private:
-    float length;
-    float width;
-
-public:
-    Rectangle(); // Default constructor
-    ~Rectangle(); // Destructor
-    void setLength(float len);
-    void setWidth(float wid);
-    float getLength() const;
-    float getWidth() const;
-    float calculateArea() const;
+#include "Polygon.h"
+ 
+class Rectangle : public Polygon {
+ public:
+ int Area();
 };
-
-#endif
